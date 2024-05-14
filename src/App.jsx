@@ -1,4 +1,5 @@
 import "./App.css";
+import "chart.js/auto";
 import { Bar } from "react-chartjs-2";
 
 function App() {

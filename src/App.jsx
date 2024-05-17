@@ -1,11 +1,11 @@
 import "./App.css";
 import "chart.js/auto";
-import { Bar } from "react-chartjs-2";
+import { Bar, Line } from "react-chartjs-2";
 
 function App() {
   return (
     <>
-      <div className="container">
+      <div className="contenedor">
         <Bar
           data={{
             labels: [
@@ -34,6 +34,31 @@ function App() {
                 label: "Perdidas",
                 data: [0, 0, 200, 0, 0, 0, 700, 0, 0, 0, 0, 0],
                 backgroundColor: "rgba(194, 44, 44, 0.8)",
+              },
+            ],
+          }}
+        />
+      </div>
+
+      <div className="contenedor">
+        <Line
+          data={{
+            labels: [
+              " ",
+              "Enero",
+              "Febrero",
+              "Marzo",
+              "Abril",
+              "Mayo",
+              "Junio",
+            ],
+            datasets: [
+              {
+                label: "Historial de ventas mensuales",
+                data: [0, 300, 400, 250, 400, 450, 500],
+                backgroundColor: "rgba(83, 245, 166, 0.8)",
+                borderColor: "rgba(83, 245, 166, 0.8)",
+                color: "rgba(83, 245, 166, 0.8)",
               },
             ],
           }}
